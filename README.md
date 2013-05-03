@@ -14,8 +14,8 @@ and [Mathias Bynens](https://github.com/mathiasbynens/)' [OSX customizations](ht
 
 Installation
 ============
-> git clone git://github.com/kayrecover/macstrap.git ~/.macstrap 
-> cd ~/.macstrap && ./bootstrap.sh
+    git clone git://github.com/kayrecover/macstrap.git ~/.macstrap 
+    cd ~/.macstrap && ./bootstrap.sh
 
 Scripts
 =======
@@ -34,19 +34,20 @@ Homebrew Cask
 extension to [Homebrew](http://mxcl.github.com/homebrew/) that allows you to 
 install .app's to your ~/Applications directory from the CLI.
 
-> brew cask install dropbox
+    brew cask install dropbox
 
 There are quite a few hacks taking place here.  I have three issues with
 homebrew-cask
 
-1 I don't want symlinks in my ~/Applications - I want the full app itself.
-2 It make symlinks to **all** the .apps it finds in the install path - this includes little .apps that are self-contained within .apps (crashreporter.app & plugincontainer.app & updater.app in Firefox.app for example)
-3 It doesn't know what to do with PKG's.
+1. I don't want symlinks in my ~/Applications - I want the full app itself.
+2. It make symlinks to **all** the .apps it finds in the install path - this includes little .apps that are self-contained within .apps (crashreporter.app & plugincontainer.app & updater.app in Firefox.app for example)
+3. It doesn't know what to do with PKG's.
 
 To solve these, sw/brew-cask.sh does the following:
-1 All the .apps symlinks are scanned for their "app depth"
-2 The .app symlink is deleted and if the app depth is 1 it will then move the symlink target to ~/Applications
-3 A recursive copy of all PKG's that have been downloaded are placed into ~/PKG
+
+1. All the .apps symlinks are scanned for their "app depth"
+2. The .app symlink is deleted and if the app depth is 1 it will then move the symlink target to ~/Applications
+3. A recursive copy of all PKG's that have been downloaded are placed into ~/PKG
 
 The following apps are installed and a handful of these are custom Casks that
 aren't in the homebrew-cask repository.
