@@ -1,0 +1,63 @@
+set nocompatible
+syntax on
+set ai
+set ruler
+set expandtab
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set smarttab
+set noerrorbells
+set showmatch
+set showcmd
+set incsearch
+set laststatus=2
+set shell=bash
+set shortmess=at
+set showmode
+set notitle
+set ttyfast
+set backspace=2
+set foldenable
+set foldmethod=marker
+set nu
+set cursorline
+
+function! InsertTabWrapper(direction)
+    let col = col('.') - 1
+    if !col || getline('.')[col - 1] !~ '\k'
+        return "\<tab>"
+    elseif "backward" == a:direction
+        return "\<c-p>"
+    else
+    return "\<c-n>"
+    endif
+endfunction
+
+inoremap <tab> <c-r>=InsertTabWrapper ("forward")<cr>
+inoremap <s-tab> <c-r>=InsertTabWrapper ("backward")<cr>
+
+" tell complete to look in the dictionary
+set complete-=k complete+=k
+
+" load the dictionary according to syntax
+:au BufReadPost * if exists("b:current_syntax")
+:au BufReadPost *   let &dictionary = substitute("~/.vim/dict/FT.dict", "FT", b:current_syntax, "")
+:au BufReadPost * endif
+
+if has("autocmd")
+    " Enable filetype detection
+    filetype plugin indent on
+
+    " Restore cursor position
+    autocmd BufReadPost *
+    \ if line("'\"") > 1 && line("'\"") <= line("$") |
+    \   exe "normal! g`\"" |
+    \ endif
+endif
+if &t_Co > 2 || has("gui_running")
+  " Enable syntax highlighting
+    syntax on
+endif
+
+set background=dark

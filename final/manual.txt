@@ -1,0 +1,67 @@
+iTerm2
+ - Profiles
+  - General => command=/usr/local/bin/zsh
+  - Colors => load_preset=monokai & set background to black
+  - Keys -> shift left & right to previous & next tabs
+------------------------------------------------
+Chrome
+ - On startup, open specific page => "about:blank"
+ - Set default search engine to startpage.com
+   - https://startpage.com/do/search?query=%s&cat=web&pl=chrome&language=english
+Extensions:
+ - History Site Blocker => add startpage.com to block list
+ - Adblock Plus => https://chrome.google.com/webstore/detail/cfhdojbkjhnklbpkdaibdccddilifddb
+   - Add EasyList & EasyPrivacy (incognito)
+   - Disable non-intrusive ads
+ - Disconnect => https://chrome.google.com/webstore/detail/disconnect/jeoacafpbcihiomhlakheieifhpjdfeo
+   - (incognito)
+ - FlashBlock => https://chrome.google.com/webstore/detail/gofhjkjmkpinhpoiabjplobcaignabnl
+   - Add youtube.com & logmein.com to exclusions (incognito)
+ - FlashControl
+   - test instead of using flashblock (very old and no longer active)
+ - Ghostery => https://chrome.google.com/webstore/detail/mlomiejdfkolichcflejclcbmpeaniij
+   - Enable GhostRank & Tracker library updating, Trackers - block all (incognito)
+   - Advanced => Disable alert bubble
+
+Others:
+ - YouTube Options
+ - YTShowRating
+------------------------------------------------
+Firefox
+ - Startpage.com => add to Firefox & make default
+ - When starts => show a blank page
+ - Privacy => tell websites that I don't want to be tracked
+ - Sync => Pair a device or setup with twitter handle
+  - Don't sync extensions/apps
+Extensions:
+ - Adblock Plus
+   - EasyList & EasyPrivacy, Fanboy & disable non-intrusive ads
+ - BetterPrivacy
+ - CookieSafe
+ - Firebug
+ - FoxyProxy Basic
+ - Ghostery
+ - HTTPS-Everywhere
+  - https://www.eff.org/https-everywhere
+  - Allow extra options for SSL examination
+ - NoScript
+  - General => Disable mouse hover icon & disable left click on icon
+  - Notifications => Disable show messages about blocked scripts
+ - Open in Chrome
+ - PDF Viewer
+ - Social Fixer
+------------------------------------------------
+Quicksilver
+ - Install cube interace and set as default
+ - Custom trigger: Cmd+Shift+E: open ~/
+ - Custom trigger: Cmd+Shift+K: Current selection -> Open with -> VLC
+------------------------------------------------
+Add all the various ssh aliases manually: e, sc, sm.local; i, li; ef :: ep = e -D localhost 9999
+------------------------------------------------
+Symlink ~/Dropbox/www to ~/www & add aliases for k, 6 & ww
+------------------------------------------------
+Install Tuxera manually
+Enable fast user switching & show only icon
+Add ~/Dropbox/Pictures/Wallpapers to Desktop/Folders
+Energy Saver: disable sleep on power adapter
+

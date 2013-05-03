@@ -1,0 +1,14 @@
+{
+	"caret_style": "wide",
+	"color_scheme": "Packages/Base16 Color Schemes/base16-monokai.dark.tmTheme",
+	"detect_indentation": true,
+	"font_size": 14.0,
+	"highlight_line": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Soda Light.sublime-theme",
+	"trim_trailing_white_space_on_save": false,
+	"use_tab_stops": true
+}

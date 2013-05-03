@@ -1,0 +1,12 @@
+vbell on                              # default: off
+vbell_msg "   -- Bell,Bell!! --   "   # default: "Wuff,Wuff!!"
+autodetach on                         # default: on
+startup_message off                   # default: on
+crlf off                              # default: off
+multiuser off
+defscrollback 1000                    # default: 100
+silencewait 15                        # default: 30
+hardstatus alwayslastline "%{=b}%{bw} %{.C}%Y-%m-%d @ %H %{ck} %-Lw%{gw}%n%f* %t%? (%u)%? %{-}%+Lw %{bw} ::.."
+bindkey "^N" screen
+shell "/usr/local/bin/zsh"
+
