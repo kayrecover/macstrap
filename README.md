@@ -19,14 +19,14 @@ Installation
 
 Scripts
 =======
-* [Git](http://git-scm.com/‎) stolen directly from [fBootstrap](https://github.com/fbeeper/fBootstrap)
+* [Git](http://git-scm.com/‎) setup stolen directly from [fBootstrap](https://github.com/fbeeper/fBootstrap)
 * [Homebrew](http://mxcl.github.com/homebrew/)
 * [Homebrew-Cask](https://github.com/phinze/homebrew-cask) with a collection of custom Casks
 * [Ruby](http://www.ruby-lang.org/‎) installed via [ruby-build](https://github.com/sstephenson/ruby-build) and handled by [chruby](https://github.com/postmodern/chruby)
 * [Pow](http://pow.cx/) and the [Powder](https://github.com/Rodreegez/powder‎) gem
 * [Zsh](http://www.zsh.org/) and [Prezto](https://github.com/sorin-ionescu/prezto) with quite a few of my own custom aliases
 * [Sublime Text](http://www.sublimetext.com/‎) with Package Control, GitGutter, Soda Theme, Base 16 color scheme & my own custom preferences
-* [OSX](https://github.com/mathiasbynens/dotfiles/blob/master/.osx) 
+* [OSX](https://github.com/mathiasbynens/dotfiles/blob/master/.osx) customizations based upon and [Mathias Bynens](https://github.com/mathiasbynens/)' work
 
 Homebrew Cask
 =============
